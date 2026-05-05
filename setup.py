@@ -1,10 +1,15 @@
-from setuptools import find_packages, setup
+from setuptools import setup
 
 setup(
     name="md2pdf",
     version="0.1.0",
-    packages=find_packages(),
+    py_modules=["md2pdf"],
     install_requires=["markdown", "weasyprint"],
+    entry_points={
+        "console_scripts": [
+            "md2pdf=md2pdf:main",
+        ],
+    },
     author="Maverick",
     description="A tool to convert markdown to PDF",
     python_requires=">=3.6",
