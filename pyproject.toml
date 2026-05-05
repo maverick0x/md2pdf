@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "md2pdf"
+version = "0.1.0"
+authors = [
+    { name = "Maverick" }
+]
+description = "A tool to convert markdown to PDF"
+requires-python = ">=3.6"
+dependencies = [
+    "markdown",
+    "weasyprint"
+]
+
+# Register as a global command-line tool
+[project.scripts]
+md2pdf = "md2pdf:main"
+
+[tool.setuptools]
+py-modules = ["md2pdf"]
