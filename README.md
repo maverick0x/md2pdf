@@ -23,24 +23,22 @@ This tool uses WeasyPrint to generate PDFs. Depending on your operating system, 
 
 You can install `md2pdf` globally on your system using Python's package manager, `pip`.
 
-1. Clone or download this repository:
-   ```bash
-   git clone https://github.com/maverick0x/md2pdf.git
-   cd md2pdf
-    ```
+**Clone or download this repository:**
+```bash
+git clone https://github.com/maverick0x/md2pdf.git
+cd md2pdf
+```
 
+**Install the package using `pip`**
+```bash
+pip install .
+```
+*(Note: The dot `.` at the end is required. It tells pip to install the package from the current directory).*
 
-2. Install the package using `pip`:
-   ```bash
-   pip install .
-   ```
-    *(Note: The dot `.` at the end is required. It tells pip to install the package from the current directory).*
-
-
-3. Verify the installation:
-   ```bash
-   md2pdf --help
-   ```
+**Verify the installation:**
+```bash
+md2pdf --help
+```
 
 ## Usage
 Once installed, you can run `md2pdf` from anywhere in your terminal or command prompt!
